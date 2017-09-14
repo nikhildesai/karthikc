@@ -1,0 +1,37 @@
+
+.loader {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.loader_animation {
+	margin: 0 auto;
+    border: 2px solid #3498db;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+    animation: spin 2s linear infinite;
+    z-index: 2
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader_text {
+	font-family: "Helvetica Neue";
+	margin-top: -200px;
+}
+
+.content_title {
+	font-size: 32px;
+	color: #333333;
+}
+
+
+.content_description {
+	font-size: 18px;
+	color: #666666;
+}

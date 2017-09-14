@@ -1,0 +1,26 @@
+body {
+  background-color: #3B73B1;
+  height: 100%;
+  text-align: center;
+}
+
+.App {
+  position: fixed;
+  float: left;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 150%;
+  width: 720px;
+  overflow:auto;
+}
+
+
+.Content {
+  padding-top: 200px;
+  background: white;
+  height: 150%;
+  color: black;
+  font-size: 30px;
+}
