@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css?family=Sarina');
+
+
+.Sign{
+	width: 90%;
+	height: 100px;
+	margin: 0 auto;
+	background: white;
+	border: 2.5px dotted #3d90e3;
+	font-family: 'Sarina', cursive;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+
+.Instruction {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top:-90px;
+	float: bottom;
+	font-family: "Helvetica Neue";
+  	font-size: 18px;
+}
+
+.Instruction_small {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top:-115px;
+	float: bottom;
+	font-size: 14px;
+}
+
+.SignHere {
+	position: relative;
+	float: right;
+	margin-right: 75%;
+	margin-top: -87px; 
+
+}
+
+
+@media screen and (max-width: 720px) {
+
+	.Sign{
+		font-size: 18px;
+	}
+
+	.Instruction {
+		font-size: 14px;
+	}
+
+	.Instruction_small {
+		font-size: 10px;
+	}
+
+	.SignHere {
+		width: 13px;
+	}
+
+
+}

@@ -1,5 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Helvetica Neue";
+  background-color: #3B73B1;
+  height: 100%;
+  text-align: center;
 }

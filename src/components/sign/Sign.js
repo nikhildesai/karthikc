@@ -6,17 +6,13 @@ class Sign extends Component {
   updateSignedStatus(event) {
   	if(event.target.value === "")
   	{ 	// Signature field is empty.
-  		document.getElementById('Instruction').style.fontSize = "18px";
-  		document.getElementById('Instruction').style.marginLeft = "210px";
-  		document.getElementById('Instruction').style.marginTop = "-90px";
+      document.getElementById('Instruction').className = "Instruction";
+      document.getElementById("PlaceOder").disabled = true;
   	}
 
   	else
   	{	// Move the placeholder to make way for the signature. Status is Signed
-  		document.getElementById('Instruction').style.fontSize = "14px";
-  		document.getElementById('Instruction').style.marginLeft = "230px";
-  		document.getElementById('Instruction').style.marginTop = "-110px";
-
+  		document.getElementById('Instruction').className = "Instruction_small";
   		// Enable Submit. Maybe after checking if Signature matches the Full Name
   		// event.target.value == Full Name
   		document.getElementById("PlaceOder").disabled = false;

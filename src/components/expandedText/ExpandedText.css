@@ -17,3 +17,19 @@
 	font-size: 14px;
 	color: #888888;
 }
+
+@media screen and (max-width: 720px) {
+
+
+	.ExpandedText_Title {
+		font-size: 12px;
+	}
+
+	.ExpandedText_Detail {
+		font-size: 10px;
+		width: 120px;
+	}
+
+
+
+}

@@ -24,8 +24,9 @@
 }
 
 .EditImage {
-	margin-top: 15px;
-	margin-left: 535px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
 }
 
 .TextCluster .content_title {
@@ -108,4 +109,41 @@ button:disabled {
 	font-family: "Helvetica Neue";
 	font-size: 14px;
 	color: #888888;
+}
+
+
+@media screen and (max-width: 720px) {
+
+	.content_title {
+		font-size: 24px;
+	}
+
+	.content_description {
+		font-size: 14px;
+	}
+
+	.TextCluster .content_title {
+		font-size: 14px;
+	}
+
+	.TextCluster .content_description {
+		font-size: 10px;
+	}
+
+	.EditImage {
+		width: 10px;
+	}
+
+	.Form_Table {
+		font-size: 12px;
+		width: 65%;
+	}
+
+	.Financing {
+		font-size: 10px;
+	}
+
+	button {
+		font-size: 14px;
+	}
 }

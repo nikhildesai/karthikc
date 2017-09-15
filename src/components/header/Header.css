@@ -1,7 +1,8 @@
 
 .Header {
   height: 140px;
-  width: 720px;
+  max-width: 720px;
+  width: 80%;
   float: left;
   position: fixed;
   background: white;
@@ -21,6 +22,8 @@
 
 .CloseImage {
 	width: 15px;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
 }
 
 .CloseButton {
@@ -34,27 +37,31 @@
 }
 
 .CarImage {
-  margin-left: 80px;
+  position: fixed;
+  width: 15%;
+  max-width: 150px;
+  margin-left: 60px;
   margin-top: 20px;
 }
 
 .InfoImage {
-	width: 15px;
+	width: 17px;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
 }
 
 .InfoButton {
-	position: fixed;
-	margin-left: 450px;
-	margin-top: 20px;
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .HeaderText {
-	position: fixed;
-	margin-top: -60px;
-	margin-left: 260px;
+  margin-top: 26px;
 	text-align: center;
-	width: 240px;
-	height: 44px;
 	font-family: "Helvetica Neue";
 }
 
@@ -92,6 +99,7 @@
   	color: #888888;
   	padding-left: 20px;
   	padding-right: 20px;
+
  }
 
 .NavbarListItemLink:hover {
@@ -109,5 +117,62 @@
   	padding-left: 20px;
   	padding-right: 20px;
   	border-bottom: 0.5px solid #222222;
-  	padding-bottom: 12px;
+  	padding-bottom: 11px;
  }
+
+ @media screen and (max-width: 720px) {
+
+  .Header {
+    width: 90%;
+    height: 100px;
+  }
+
+  .CloseImage {
+    width: 10px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+  }
+
+  .InfoImage {
+    width: 13px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+  }
+
+  .CarImage {
+    position: fixed;
+    margin-left: 45px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+  }
+
+  .Line1 {
+    font-size: 14px;
+  }
+
+  .Line2 {
+    font-size: 12px;
+  }
+
+  .NavbarListItem {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .NavbarListItemLink {
+    font-size: 14px;
+    line-height: 28px;
+    transition: font-size 0.5s;
+  }
+
+  .NavbarListItemLink:hover {
+    padding-bottom: 0px;
+  }
+
+  .NavbarListItemLink_active {
+    font-size: 14px;
+    line-height: 28px;
+    padding-bottom: 6px;
+  }
+
+}

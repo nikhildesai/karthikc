@@ -6,27 +6,26 @@ class Header extends Component {
   render() {
   	return (
   		<div className="Header">
-
   			<div className="CarDetails">
 
   				<a className="CloseButton">
-              		<img className="CloseImage" alt="close" src="/images/close.svg"/>
-            	</a>
+            <img className="CloseImage" alt="close" src="/images/close.svg"/>
+          </a>
 
-            	<img className="CarImage" alt="2017 Honda Fit LX" src="/images/car.png"/>
+          <img className="CarImage" alt={this.props.title} src={this.props.image}/>
 
-		        <div className="HeaderText">
-		          <div className="Line1">
-		          Buy 2017 Honda Fit LX
-		          </div>
-		          <div className="Line2">
-		          $16,965.00  -  Reserved for 29:35
-		          </div>
+		      <div className="HeaderText">
+		        <div className="Line1">
+		          {this.props.title}
 		        </div>
+		        <div className="Line2">
+		          {this.props.price}
+		        </div>
+		      </div>
 
-	            <a className="InfoButton">
-	              <img className="InfoImage" alt="info" src="/images/info.svg"/>
-	            </a>
+	        <a className="InfoButton">
+	          <img className="InfoImage" alt="info" src="/images/info.svg"/>
+	        </a>
 
   			</div>
 

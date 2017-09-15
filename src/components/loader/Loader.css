@@ -35,3 +35,25 @@
 	font-size: 18px;
 	color: #666666;
 }
+
+
+@media screen and (max-width: 720px) {
+
+  .content_title {
+    font-size: 24px;
+  }
+
+  .content_description {
+    font-size: 14px;
+  }
+
+  .loader_animation {
+    width: 300px;
+    height: 300px;
+  }
+
+  .loader_text {
+	margin-top: -190px;
+  }
+
+}

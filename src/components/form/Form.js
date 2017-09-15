@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Form.css';
-import ExpandedText from './ExpandedText.js'
-import Sign from './Sign.js'
+import ExpandedText from '../expandedText/ExpandedText.js'
+import Sign from '../sign//Sign.js'
 
 class Form extends Component {
 
@@ -25,6 +25,7 @@ class Form extends Component {
   }
 
   render() {
+  	// For now we can use static data.
   	return (
   		<div className="Form">
 
